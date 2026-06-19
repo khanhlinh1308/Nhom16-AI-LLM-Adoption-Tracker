@@ -1,0 +1,10 @@
+﻿requests==2.31.0
+kafka-python==2.0.2
+pyspark==3.5.0
+redis==5.0.1
+python-dotenv==1.0.1
+streamlit==1.36.0
+numpy==1.26.4
+pandas==2.0.3
+
+

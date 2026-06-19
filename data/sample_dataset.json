@@ -1,0 +1,29 @@
+﻿[
+  {
+    "event_id": "sample-001",
+    "event_type": "PushEvent",
+    "repo_name": "team16/langchain-rag-demo",
+    "actor_login": "demo-user",
+    "created_at": "2026-06-19T03:00:00Z",
+    "collected_at": "2026-06-19T03:00:05Z",
+    "text_content": "Add LangChain RAG pipeline with OpenAI embeddings"
+  },
+  {
+    "event_id": "sample-002",
+    "event_type": "WatchEvent",
+    "repo_name": "student/llm-agent-toolkit",
+    "actor_login": "demo-star",
+    "created_at": "2026-06-19T03:01:00Z",
+    "collected_at": "2026-06-19T03:01:07Z",
+    "text_content": "llm agent toolkit"
+  },
+  {
+    "event_id": "sample-003",
+    "event_type": "PullRequestEvent",
+    "repo_name": "course/vector-database-lab",
+    "actor_login": "demo-pr",
+    "created_at": "2026-06-19T03:02:00Z",
+    "collected_at": "2026-06-19T03:02:08Z",
+    "text_content": "Benchmark vector database retrieval for generative ai apps"
+  }
+]
