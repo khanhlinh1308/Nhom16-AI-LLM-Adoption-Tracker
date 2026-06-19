@@ -1,4 +1,4 @@
-﻿services:
+services:
   zookeeper:
     image: confluentinc/cp-zookeeper:7.6.1
     container_name: ai_tracker_zookeeper
@@ -65,7 +65,7 @@
       - .env
     environment:
       KAFKA_BROKER: kafka:9092
-    command: sh -c "pip install --no-cache-dir -r requirements.txt && python src/ingestion/github_collector.py"
+    command: sh -c "pip install requests kafka-python python-dotenv && python src/ingestion/github_collector.py"
     restart: unless-stopped
 
   spark_streaming:
@@ -108,5 +108,5 @@
       REDIS_HOST: redis
     ports:
       - "8501:8501"
-    command: sh -c "pip install --no-cache-dir -r requirements.txt && streamlit run src/visualization/app.py --server.address=0.0.0.0 --server.port=8501"
+    command: sh -c "pip install streamlit pandas redis python-dotenv numpy && streamlit run src/visualization/app.py --server.address=0.0.0.0 --server.port=8501"
     restart: unless-stopped
