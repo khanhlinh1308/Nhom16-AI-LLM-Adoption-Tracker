@@ -124,8 +124,8 @@ docker compose down
 
 Sau khi `docker compose up -d` chạy thành công (đợi khoảng 30–60 giây để Kafka/Spark khởi động và gom mẻ Windowing đầu tiên), mở trình duyệt tại:
 http://localhost:8501
-code
-Code
+
+
 **Các tính năng UI/UX nổi bật:**
 - **Đa ngôn ngữ (i18n):** Hỗ trợ chuyển đổi trực tiếp giữa Tiếng Anh (EN) và Tiếng Việt (VN) trên Sidebar mà không cần tải lại trang.
 - **Smart Auto-refresh:** Tích hợp bộ đếm ngược thời gian thực (hiển thị từng giây). Người dùng có thể Tắt/Bật công tắc này để tạm dừng làm mới khi cần thao tác với bộ lọc (Filters).
