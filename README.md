@@ -60,7 +60,7 @@ Nhom16-AI-LLM-Adoption-Tracker/
 ### 3.1. Clone repo
 
 ```bash
-git clone https://github.com/<your-org>/Nhom16-AI-LLM-Adoption-Tracker.git
+git clone https://github.com/khanhlinh1308/Nhom16-AI-LLM-Adoption-Tracker.git
 cd Nhom16-AI-LLM-Adoption-Tracker
 ```
 
@@ -120,15 +120,16 @@ docker compose down
 
 ---
 
-## 5. Truy cập Dashboard
+## 5. Truy cập Dashboard & Tính năng nổi bật
 
-Sau khi `docker compose up -d` chạy thành công (đợi khoảng 30–60 giây để Kafka/Spark khởi động xong), mở trình duyệt tại:
-
-```
+Sau khi `docker compose up -d` chạy thành công (đợi khoảng 30–60 giây để Kafka/Spark khởi động và gom mẻ Windowing đầu tiên), mở trình duyệt tại:
 http://localhost:8501
-```
-
-Dashboard sẽ tự động cập nhật (auto-refresh mỗi 5 giây) khi có dữ liệu mới chảy vào Redis.
+code
+Code
+**Các tính năng UI/UX nổi bật:**
+- **Đa ngôn ngữ (i18n):** Hỗ trợ chuyển đổi trực tiếp giữa Tiếng Anh (EN) và Tiếng Việt (VN) trên Sidebar mà không cần tải lại trang.
+- **Smart Auto-refresh:** Tích hợp bộ đếm ngược thời gian thực (hiển thị từng giây). Người dùng có thể Tắt/Bật công tắc này để tạm dừng làm mới khi cần thao tác với bộ lọc (Filters).
+- **Interactive Filters:** Bộ lọc đa luồng theo công nghệ AI (ChatGPT, RAG, LangChain...) và các bảng dữ liệu tích hợp link truy cập thẳng đến kho lưu trữ GitHub gốc.
 
 ---
 
