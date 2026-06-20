@@ -143,8 +143,7 @@ st.caption(t["caption"])
 # --- FETCH DATA ---
 total_events = int(client.get("total_ai_events_detected") or 0)
 repos_df = zset_to_frame(client, "top_ai_repos", "repository")
-timeline_df = timeline_to_frame(client)
-
+timeline_df = timeline_to_frame(client, limit=1000)
 top_keyword = keywords_df.iloc[0]["keyword"] if not keywords_df.empty else "-"
 latest_count = int(timeline_df.iloc[-1]["ai_event_count"]) if not timeline_df.empty else 0
 last_update = timeline_df.iloc[-1]["timestamp"] if not timeline_df.empty else None
