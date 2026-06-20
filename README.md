@@ -1,8 +1,8 @@
-# 📊 AI/LLM Adoption Tracker — Nhóm 16
+#  AI/LLM Adoption Tracker — Nhóm 16
 
 Hệ thống Big Data theo dõi xu hướng ứng dụng AI/LLM trong các dự án mã nguồn mở trên GitHub theo **thời gian thực**.
 
-🎬 **[Click để xem Video Demo Hệ thống hoạt động](https://drive.google.com/file/d/1ysJgwIrwS9_LkdI2uUhSxS8cLeZNuYlw/view?usp=sharing)**
+**[Click để xem Video Demo Hệ thống hoạt động](https://drive.google.com/file/d/1ysJgwIrwS9_LkdI2uUhSxS8cLeZNuYlw/view?usp=sharing)**
 
 ```
 GitHub Events API ➔ Python Collector ➔ Apache Kafka ➔ Apache Spark (Structured Streaming) ➔ Redis ➔ Streamlit Dashboard
@@ -79,7 +79,7 @@ SLIDE_DURATION=1 minute
 WATERMARK_DELAY=2 minutes
 ```
 
-> 💡 `GITHUB_TOKEN` không bắt buộc, nhưng nên tạo một [Personal Access Token](https://github.com/settings/tokens) để tăng rate limit từ 60 lên 5000 request/giờ.
+> `GITHUB_TOKEN` không bắt buộc, nhưng nên tạo một [Personal Access Token](https://github.com/settings/tokens) để tăng rate limit từ 60 lên 5000 request/giờ.
 
 ### 3.3. Cài thư viện Python (nếu muốn chạy/test cục bộ ngoài Docker)
 
